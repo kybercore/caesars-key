@@ -9,3 +9,9 @@ Right now Caesar's key supports English, German, French, Spanish, Italian, Dutch
 ## Usage
 
 `python main.py input.txt`
+
+Example output:
+```
+[decrypted text]
+Best guess: ES (proximity 0.9366393682363263 with key 12
+```

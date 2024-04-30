@@ -1,1 +1,7 @@
-Efmd Imde, oazaoupm fmynuéz qz qebmñax oaya Xm sgqddm pq xme smxmjume,​ qe gzm rdmzcguoum k gzuhqdea oaybmdfupa pq rmzfmeím oaybgqefm bduyadpumxyqzfq pq gzm eqduq pq bqxíogxme oazoqnupme bad qx ouzqmefm qefmpagzupqzeq Sqadsq Xgome qz xm péompm pq 1970, k bdapgoupme k puefdungupme uzuoumxyqzfq bad 20ft Oqzfgdk Raj k baefqduadyqzfq bad Ftq Imxf Puezqk Oaybmzk m bmdfud pq 2012. Eg fdmym pqeodunq xme huhqzoume pq gz sdgba pq bqdeazmvqe cgq tmnufmz qz gzm smxmjum ruofuoum q uzfqdmofúmz oaz qxqyqzfae oaya «xm Rgqdlm», gz omyba pq qzqdsím yqfmríeuoa k ayzubdqeqzfq cgq baeqq gz «xmpa xgyuzaea» uybgxempa bad xm emnupgdím, xm zanxqlm k xm vgefuoum k gfuxulmpa bad xae Vqpu, k gz «xmpa aeogda» gempa bad xae Euft k bdahaompa bad xm udm, qx yuqpa, qx apua k xm pqeqebqdmouóz.
+This is a simple Caesar's cipher attack in Python using frequency analysis. It is inspired by this Medium article and extended to be multi-lingual.
+
+The underlying logic is that each (Latin-alphabet) language has a slightly different average frequency for every character. The best decoding attempt out of all languages with the highest proximity (expressed in a low float output, the difference) appears to reliably represent the correct language. 
+
+Caesar's key identifies the language of the encrypted text as well as the key in one go and decrypts the text.
+
+Right now Caesar's key supports English, German, French, Spanish, Italian, Dutch, Portuguese and Swedish.

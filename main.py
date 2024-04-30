@@ -86,9 +86,9 @@ def main() -> int:
 
     best_guess = min(language_outputs, key=lambda x: x[0][0])
 
-    print(best_guess[0][2])
+    print(best_guess[0][2].strip())
     print(
-        f"Best guess: {best_guess[1].upper()} (proximity {best_guess[0][0]} with key {best_guess[0][1]}"
+        f"\033[34m\nBest guess: {best_guess[1].upper()} (proximity {best_guess[0][0]} with key {best_guess[0][1]})\033[0m"
     )
 
     return 0

@@ -1,6 +1,6 @@
 from collections import Counter
 import sys
-from freq import FREQ_EN, FREQ_DE, FREQ_FR, FREQ_IT, FREQ_ES, FREQ_PT, FREQ_SE, FREQ_NL
+from freq import *
 
 ALPHABET = "abcdefghijklmnopqrstuvwxyz"
 ALPHABET_SIZE = len(ALPHABET)
@@ -88,7 +88,7 @@ def main() -> int:
 
     print(best_guess[0][2].strip())
     print(
-        f"\033[34m\nBest guess: {best_guess[1].upper()} (proximity {best_guess[0][0]} with key {best_guess[0][1]})\033[0m"
+        f"\033[34m\nBest guess: {best_guess[1].upper()} (proximity {round(best_guess[0][0], 2)} with key {best_guess[0][1]})\033[0m"
     )
 
     return 0
